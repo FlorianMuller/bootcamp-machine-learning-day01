@@ -1,0 +1,24 @@
+1 - When we pre-process the training examples, why are we adding a column of ones to the left of the x vector (or X matrix) when we use the linear algebra trick?
+To use `np.dot` with the x matrix and the theta vector.
+
+This colum of ones will be multiplied by theta0, forming the equation:
+= theta0 * 1 + theta1 * x1 + ... + thetaN * xN
+= theta0 + theta1 * x1 + ... + thetaN * xN
+
+In case x has only one column, we have the linear eqution:
+= theta0 * 1 + theta1 * x
+= theta0 + theta1 * x
+(= a + b * x)
+
+
+2 - Why does the cost function square the distance between the data points and their predicted values?
+To make big errors even biggers, cost more
+(like the square function ↗️)
+
+
+3 - What does the cost function value represent?
+The differnece between our prediction and the real result we've got with our data
+
+
+4 - Toward which value would you like the cost function to tend to? What would it mean?
+We want it to tend toward 0. That mean that to have a good prediciton we must minimise the cost
