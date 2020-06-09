@@ -56,12 +56,12 @@ if __name__ == "__main__":
     theta1 = np.array([2, 0.7])
     print(simple_gradient(x, y, theta1))
     # Output:
-    # array([21.0342574,  587.36875564])
-    # me: [ -19.0342574  -586.66875564]
+    # subject: array([21.0342574,  587.36875564])
+    # me:          [ -19.0342574  -586.66875564]
 
     # Example 1:
     theta2 = np.array([1, -0.4])
-    print(simple_gradient(x, y, theta2))
+    print(repr(simple_gradient(x, y, theta2)))
     # Output:
-    # array([58.86823748,  2229.72297889])
-    # me: [ -57.86823748  -2230.12297889]
+    # subject: array([58.86823748,  2229.72297889])
+    # me:          [ -57.86823748  -2230.12297889]
